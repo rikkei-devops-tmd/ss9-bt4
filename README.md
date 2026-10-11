@@ -10,7 +10,7 @@ BAI 4: LUU TRU DU LIEU DON GIAN VOI DOCKER VOLUME
 - Khi container dung hoac bi xoa (--rm), du lieu trong volume van duoc giu nguyen tren host tai khu vuc quan ly cua Docker (/var/lib/docker/volumes/).
 - Cac container khac co the mount cung volume de tiep tuc doc va su dung du lieu.
 
-3. CAC BUOC THUC HIEN
+3. CAC BUOC THUC HIEN VA KET QUA TERMINAL THUC TE
 
 3.1. Tao Named Volume moi
 Lenh thuc hien:
@@ -41,7 +41,7 @@ docker run --rm -v easy-volume:/data alpine sh -c "echo 'Luu tru du lieu Docker'
 Ket qua:
 - Container khoi chay, mount volume easy-volume vao duong dan /data.
 - Ghi chuoi "Luu tru du lieu Docker" vao /data/test.txt.
-- Container tu dong dung va bi xoa do co co --rm.
+- Container tu dong dung va bi xoa do co co --rm ma khong lam mat du lieu trong volume.
 
 3.4. Khoi chay Container 2 doc lai du lieu tu Volume de kiem tra
 Lenh thuc hien:
